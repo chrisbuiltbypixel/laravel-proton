@@ -1,0 +1,183 @@
+{
+    "name": "laravel/laravel",
+    "type": "project",
+    "description": "The Laravel Framework.",
+    "keywords": [
+        "framework",
+        "laravel"
+    ],
+    "license": "MIT",
+    "require": {
+        "php": "^7.3|^8.0",
+        "builtbypixel/core-module": "dev-master",
+        "fideloper/proxy": "^4.4",
+        "fruitcake/laravel-cors": "^2.0",
+        "guzzlehttp/guzzle": "^7.0.1",
+        "joshbrw/laravel-module-installer": "^1.0",
+        "laravel/framework": "^8.12",
+        "laravel/tinker": "^2.5",
+        "nwidart/laravel-modules": "^8.2",
+        "spatie/laravel-responsecache": "^6.6",
+        "laravel/scout": "^8.5",
+        "laravel/passport": "^10.1",
+        "spatie/laravel-permission": "^3.18",
+        "teamtnt/laravel-scout-tntsearch-driver": "^11.1"
+    },
+    "require-dev": {
+        "barryvdh/laravel-debugbar": "^3.5",
+        "facade/ignition": "^2.5",
+        "fakerphp/faker": "^1.9.1",
+        "laravel/breeze": "^1.0",
+        "laravel/sail": "^0.0.5",
+        "mockery/mockery": "^1.4.2",
+        "nunomaduro/collision": "^5.0",
+        "phpunit/phpunit": "^9.3.3"
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "dont-discover": []
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/",
+            "Database\\Factories\\": "database/factories/",
+            "Database\\Seeders\\": "database/seeders/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/",
+            "Modules\\": "Modules/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "scripts": {
+        "post-autoload-dump": [
+            "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
+            "@php artisan package:discover --ansi"
+        ],
+        "post-root-package-install": [
+            "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+        ],
+        "post-create-project-cmd": [
+            "@php artisan key:generate --ansi"
+        ]
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://pixelchrismills@bitbucket.org/builtbypixel/adminuser-module.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://pixelchrismills@bitbucket.org/builtbypixel/attribute-module.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://pixelchrismills@bitbucket.org/builtbypixel/auth-module.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://pixelchrismills@bitbucket.org/builtbypixel/blog-module.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://pixelchrismills@bitbucket.org/builtbypixel/brand-module.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://pixelchrismills@bitbucket.org/builtbypixel/cart-module.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://pixelchrismills@bitbucket.org/builtbypixel/category-module.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://pixelchrismills@bitbucket.org/builtbypixel/comment-module.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://pixelchrismills@bitbucket.org/builtbypixel/contact-module.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://pixelchrismills@bitbucket.org/builtbypixel/core-module.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://pixelchrismills@bitbucket.org/builtbypixel/course-module.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://pixelchrismills@bitbucket.org/builtbypixel/favourite-module.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://pixelchrismills@bitbucket.org/builtbypixel/invoice-module.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://pixelchrismills@bitbucket.org/builtbypixel/media-module.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://pixelchrismills@bitbucket.org/builtbypixel/module-module.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://pixelchrismills@bitbucket.org/builtbypixel/order-module.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://pixelchrismills@bitbucket.org/builtbypixel/page-module.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://pixelchrismills@bitbucket.org/builtbypixel/product-module.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://pixelchrismills@bitbucket.org/builtbypixel/review-module.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://pixelchrismills@bitbucket.org/builtbypixel/rma-module.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://pixelchrismills@bitbucket.org/builtbypixel/setting-module.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://pixelchrismills@bitbucket.org/builtbypixel/shop-module.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://pixelchrismills@bitbucket.org/builtbypixel/sidebar-module.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://pixelchrismills@bitbucket.org/builtbypixel/subscription-module.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://pixelchrismills@bitbucket.org/builtbypixel/transaction-module.git"
+        },
+         {
+            "type": "vcs",
+            "url": "https://pixelchrismills@bitbucket.org/builtbypixel/user-module.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://pixelchrismills@bitbucket.org/builtbypixel/voucher-module.git"
+        }
+    ]
+}
